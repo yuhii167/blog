@@ -19,12 +19,15 @@ all {
     height: 100%;
 }
 menubar {
+    float: right;
+    padding-left: 32px;
     flex-shrink: 0;
     box-sizing: border-box;
     height: 60px;
     display: flex;
     align-items: center;
     padding: 6px;
+    justify-content: flex-end;
 }
 
 mid {
@@ -46,15 +49,19 @@ gg {
     position: relative;
 }
 
-mb {
+.mb {
+    text-decoration: none;
+    color: #222;
     display: inline-block;
     line-height: 24px;
     vertical-align: middle;
-    color: rgba(0,0,0,0.87);
     padding-right: 15px;
 }
+.mb:hover {
+    text-decoration: underline;
+}
 
-mbl {
+.mbl {
     text-decoration: none;
     color: #fff;
     padding: 9px 15px;
@@ -75,17 +82,27 @@ mbl {
     vertical-align: middle;
 }
 
+bot {
+    background: #f2f2f2;
+    flex-shrink: 0;
+    box-sizing: border-box;
+}
 
+.vn {
+    padding: 15px 30px;
+    border-bottom: 1px solid;
+    font-size: 15px;
+    color: #CCCCCC;
+}
 
 </style>
 </head>
 <body>
 <all data-hveid="1">
 <menubar>
-<mb>
-    <a href="https://mail.google.com/mail/&ogbl">Gmail</a>
-    <mbl> <a href="https://accounts.google.com/ServiceLogin?hl=vi&passive=true&continue=https://www.google.com/&ec=GAZAmgQ">Đăng Nhập</a> </mbl> 
-</mb>
+    <a class="mb" href="https://mail.google.com/mail/&ogbl">Gmail</a>
+    <a class="mb" href="https://www.google.com.vn/imghp?hl=vi&authuser=0&ogbl">Hình Ảnh</a>
+    <a class="mbl" href="https://accounts.google.com/ServiceLogin?hl=vi&passive=true&continue=https://www.google.com/%3Fgws_rd%3Dssl&ec=GAZAmgQ">Đăng nhập</a>
 </menubar>
 <mid>
 <gg>
@@ -95,7 +112,6 @@ mbl {
     width: auto; src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" width="272" data-atf="1" data-frt="0">
 </gg>
 </mid>
-
 </all>
 </body>
 </html>
