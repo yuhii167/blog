@@ -13,6 +13,38 @@ body {
     display: block;
 }
 
+all {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+menubar {
+    flex-shrink: 0;
+    box-sizing: border-box;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding: 6px;
+}
+
+mid {
+    flex-shrink: 0;
+    box-sizing: border-box;
+    min-width: 150px;
+    max-height: 290px;
+    height: 560px;
+    min-height: 92px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+gg {
+    height: 100%;
+    margin-top: auto;
+    max-height: 92px;
+    position: relative;
+}
 
 mb {
     display: inline-block;
@@ -42,26 +74,28 @@ mbl {
     text-align: center;
     vertical-align: middle;
 }
-gg {
-    max-height: 100%;
-    max-width: 100%;
-    object-fit: contain;
-    object-position: center bottom;
-    width: auto;
-    height: 92px;
-    aspect-ratio: auto 272 / 92;
-    font-size: 14px;
-    font-family: arial,sans-serif;
-    color: #222;
-    width: 272px;
-}
+
+
+
 </style>
 </head>
 <body>
+<all data-hveid="1">
+<menubar>
 <mb>
     <a href="https://mail.google.com/mail/&ogbl">Gmail</a>
-    <mbl> <a href="https://accounts.google.com/ServiceLogin?hl=vi&passive=true&continue=https://www.google.com/&ec=GAZAmgQ">Đăng Nhập</a> </mbl> </mb>
-    <gg> <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"> </gg>
+    <mbl> <a href="https://accounts.google.com/ServiceLogin?hl=vi&passive=true&continue=https://www.google.com/&ec=GAZAmgQ">Đăng Nhập</a> </mbl> 
+</mb>
+</menubar>
+<mid>
+<gg>
+    <img max-height: 100%;max-width: 100%;
+    object-fit: contain;
+    object-position: center bottom;
+    width: auto; src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" width="272" data-atf="1" data-frt="0">
+</gg>
+</mid>
 
+</all>
 </body>
 </html>
