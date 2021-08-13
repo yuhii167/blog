@@ -13,6 +13,30 @@ body {
     display: block;
 }
 
+input {
+    -webkit-writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: -internal-light-dark(black, white);
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    appearance: auto;
+    background-color: -internal-light-dark(rgb(255, 255, 255), rgb(59, 59, 59));
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    margin: 0em;
+    font: 400 13.3333px Arial;
+    padding: 1px 2px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+}
+
 all {
     display: flex;
     flex-direction: column;
@@ -95,6 +119,102 @@ bot {
     color: #CCCCCC;
 }
 
+.search {
+    width: auto;
+    max-width: 584px;
+    position: relative;
+    margin: auto;
+    padding-top: 6px;
+}
+
+.searchbar {
+    width: 584px;
+    max-width: 584px;
+    background: #fff;
+    display: flex;
+    border: 1px solid #dfe1e5;
+    box-shadow: none;
+    border-radius: 24px;
+    z-index: 3;
+    height: 44px;
+    margin: auto;
+}
+
+.member {
+    flex: 1;
+    display: flex;
+    padding: 5px 8px 0 16px;
+    padding-left: 14px;
+}
+
+.searchicon {
+    display: flex;
+    align-items: center;
+    padding-right: 13px;
+    margin-top: -5px;
+}
+
+.inputsearch {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    color: transparent;
+    flex: 100%;
+    white-space: pre;
+    height: 34px;
+}
+
+.inputcustom {
+    background-color: transparent;
+    border: none;
+    margin: 0;
+    padding: 0;
+    color: #222;
+    word-wrap: break-word;
+    outline: none;
+    display: flex;
+    flex: 100%;
+    -webkit-tap-highlight-color: transparent;
+    margin-top: -0px;
+    height: 34px;
+    font-size: 16px;
+}
+
+input[type="submit" i] {
+    appearance: auto;
+    user-select: none;
+    white-space: pre;
+    align-items: flex-start;
+    text-align: center;
+    cursor: default;
+    color: -internal-light-dark(black, white);
+    background-color: -internal-light-dark(rgb(239, 239, 239), rgb(59, 59, 59));
+    box-sizing: border-box;
+    padding: 1px 6px;
+    border-width: 2px;
+    border-style: outset;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+}
+
+.buttonsearch input[type="submit"] {
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+
 </style>
 </head>
 <body>
@@ -110,7 +230,17 @@ bot {
     object-fit: contain;
     object-position: center bottom;
     width: auto; src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" width="272" data-atf="1" data-frt="0">
-</gg>
+</gg>   
+<div class="search">
+    <div class="searchbar">
+        <div class="member">
+            <div class="inputsearch">
+                <input class="inputcustom" maxlength="2048" name="q" type="text" aria-autocomplete="both" aria-haspopup="false" autocapitalize="off" autocomplete="off" autofocus role="combobox" spellcheck="false" title="Tìm kiếm" value aria-label="TÌm kiếm" data-ved="INPUT">
+            </div>
+        </div>
+    </div>
+    <input class="buttonsearch" value="Tìm trên google" aria-label="Tìm trên google" name="sb" type="submit" data-ved="INPUT">
+</div>
 </mid>
 </all>
 </body>
